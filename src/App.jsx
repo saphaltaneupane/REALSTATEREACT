@@ -1,0 +1,22 @@
+import React from 'react'
+import Header from './components/Header/Header'
+import Hero from './components/Hero/Hero'
+import './App.css'
+import House from './components/Properties/House'
+import Properties from './components/Properties/Properties'
+const App = () => {
+  return (
+    <div className="App">
+      <div>
+        <div className="white-gradient"/>
+          <Header />
+          <Hero />
+         
+      </div>
+       <Properties />
+
+    </div>
+  )
+}
+
+export default App
