@@ -1,7 +1,12 @@
-.properties-wrapper{
-    display:flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
+/* properties.css */
+.properties-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+     
+  width: 100%;
+  padding: 2rem 1rem 3rem;
+  box-sizing: border-box;
+  background: #f5f8fb;  
+  
 }

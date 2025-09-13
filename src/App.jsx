@@ -4,6 +4,8 @@ import Hero from './components/Hero/Hero'
 import './App.css'
 import House from './components/Properties/House'
 import Properties from './components/Properties/Properties'
+import Value from './components/Value/Value'
+import Contact from './components/Contact/contact'
 const App = () => {
   return (
     <div className="App">
@@ -15,6 +17,9 @@ const App = () => {
       </div>
        <Properties />
 
+
+    <Value />
+    <Contact />
     </div>
   )
 }
