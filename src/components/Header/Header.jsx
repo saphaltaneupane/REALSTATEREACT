@@ -8,7 +8,7 @@ const Header = () => {
         <img src="./logo.png" alt="logo" width={100} />
         <div className="h-menu">
             <a href="#">Property</a>
-            <a href="#">Our Value</a>
+         
             <a href="#">Contact us</a>
             <a href="#">Get Started</a>
             <button className="button">

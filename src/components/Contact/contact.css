@@ -1,0 +1,218 @@
+.contact-section {
+    background: #f8f9fa;
+    min-height: 100vh;
+    padding: 4rem 0;
+    color: #333;
+}
+
+/* Header Section */
+.head {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding: 0 2rem;
+}
+
+.head h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.head p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+/* Left Section - Contact Form */
+.left {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e5e7eb;
+}
+
+.leftform h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #333;
+}
+
+.left form input,
+.left form textarea {
+    width: 100%;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 0.75rem;
+    padding: 0.875rem 1rem;
+    font-size: 1rem;
+    color: #333;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    margin-bottom: 1.5rem;
+}
+
+.left form input:focus,
+.left form textarea:focus {
+    outline: none;
+    border-color: #5D5CDE;
+    box-shadow: 0 0 0 3px rgba(93, 92, 222, 0.1);
+}
+
+.left form input::placeholder,
+.left form textarea::placeholder {
+    color: #9CA3AF;
+}
+
+.left form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.left form button {
+    width: 100%;
+    background: linear-gradient(135deg, #5D5CDE, #7C3AED);
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    box-shadow: 0 4px 15px rgba(93, 92, 222, 0.3);
+}
+
+.left form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(93, 92, 222, 0.4);
+}
+
+.left form button:active {
+    transform: translateY(0);
+}
+
+/* Right Section - Contact Information */
+.right {
+    position: sticky;
+    top: 2rem;
+    background: white;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e5e7eb;
+}
+
+.right h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+.contact-info {
+    width: 100%;
+}
+
+.info-card {
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.info-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.icon {
+    background: rgba(93, 92, 222, 0.1);
+    border-radius: 50%;
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    min-height: 48px;
+}
+
+.info-item h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: #333;
+}
+
+.info-item p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .head h1 {
+        font-size: 2.5rem;
+    }
+    
+    .container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .left {
+        position: static;
+        order: 2;
+    }
+    
+    .right {
+        order: 1;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .head {
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .head h1 {
+        font-size: 2rem;
+    }
+    
+    .right, .left {
+        padding: 1.5rem;
+    }
+}
