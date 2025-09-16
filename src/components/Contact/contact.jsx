@@ -2,10 +2,10 @@ import "./contact.css";
 
 export default function Contact() {
   return (
-    <div>
+    <div id="contact">
       <div className="head">
         <h1>Get In Touch</h1>
-        <p>
+       <p className="gradient-text">
           Ready to find your dream home? Contact our expert team for
           personalized assistance.
         </p>

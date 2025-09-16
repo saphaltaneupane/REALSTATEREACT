@@ -111,12 +111,13 @@
 
 /* Right Section - Contact Information */
 .right {
-    position: sticky;
-    top: 2rem;
+    /* Removed sticky so it won't scroll with the page */
+    position: static; 
     background: white;
     border-radius: 1.5rem;
     padding: 2.5rem;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 
+                0 10px 10px -5px rgba(0, 0, 0, 0.04);
     border: 1px solid #e5e7eb;
 }
 
@@ -216,3 +217,5 @@
         padding: 1.5rem;
     }
 }
+
+
