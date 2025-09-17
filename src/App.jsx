@@ -6,21 +6,35 @@ import House from './components/Properties/House'
 import Properties from './components/Properties/Properties'
 import Footer from './components/Footer/footer'
 import Contact from './components/Contact/contact'
+import { Routes, Route } from "react-router-dom";
+import Login from './components/Login/Login';
+import Register from './components/Register/Register'; 
+
 const App = () => {
   return (
     <div className="App">
-      <div>
-        <div className="white-gradient"/>
-          <Header />
-          <Hero />
-         
-      </div>
-       <Properties />
+      <Routes>
+        {/* Home page */}
+        <Route
+          path="/"
+          element={
+            <>
+              <div>
+                <div className="white-gradient" />
+                <Header />
+                <Hero />
+              </div>
+              <Properties />
+              <Contact />
+              <Footer />
+            </>
+          }
+        />
 
-
- 
-    <Contact />
-    <Footer />
+        {/* Register page */}
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
     </div>
   )
 }
