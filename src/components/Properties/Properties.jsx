@@ -8,8 +8,7 @@ const Properties = () => {
   return (
     <div className="properties-wrapper" id="property">
       <House />
-      <Rent />
-      <Land />
+    
     </div>
   );
 };

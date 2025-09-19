@@ -1,31 +1,30 @@
 import React from "react";
-import { Link } from "react-scroll";        // for scroll
-import { Link as RouterLink } from "react-router-dom";  // for routing
+import { Link } from "react-scroll";        
+import { Link as RouterLink } from "react-router-dom";  
 import "./Header.css";
-import "../../index.css";
 
 const Header = () => {
   return (
-    <section className="h-wrapper">
-      <div className="h-container">
-        <img src="./logo.png" alt="logo" width={100} />
-        <div className="h-menu">
-          <Link to="property" smooth={true} duration={500}>Property</Link>
-          <Link to="contact" smooth={true} duration={500}>Contact us</Link>
+    <header className="header-wrapper">
+      <div className="header-container">
+        <img src="./logo.png" alt="logo" className="logo" />
 
-          
-            <RouterLink to="/login" className="contact">
+        <nav className="nav-menu">
+          <Link to="property" smooth={true} duration={500} className="nav-link">
+            Property
+          </Link>
+          <Link to="contact" smooth={true} duration={500} className="nav-link">
+            Contact us
+          </Link>
+          <RouterLink to="/login" className="nav-link">
             Login
-            </RouterLink>
-             <button className="button">
-            <RouterLink to="/register" className="contact">
-              Register
-            </RouterLink>
-          </button>
-      
-        </div>
+          </RouterLink>
+          <RouterLink to="/register" className="btn-register">
+            Register
+          </RouterLink>
+        </nav>
       </div>
-    </section>
+    </header>
   );
 };
 
