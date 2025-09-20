@@ -1,14 +1,17 @@
 .hero-wrapper {
   position: relative;
-  padding: 4rem 1.5rem; /* more breathing room */
-  background-color: black;
+  padding: 4rem 1.5rem;
+  background-color: black; /* remove this if you don’t want black bg */
   display: flex;
-  justify-content: center; /* center contents */
+  justify-content: center;
 }
+
+
+
 
 .hero-container {
   width: 100%;
-  max-width: 1200px; /* keep content centered and not too wide */
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -24,20 +27,20 @@
   justify-content: center;
   flex: 1;
   min-width: 280px;
-  padding-left: 1rem; /* small spacing from left edge */
+  padding-left: 1rem;
 }
 
 .hero-left h1 {
   font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: white;
+  color: #fff; /* pure white */
 }
 
 .hero-left p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
-  color: white;
+  color: #ddd; /* brighter grey */
 }
 
 .hero-right {
@@ -46,23 +49,20 @@
   align-items: center;
   justify-content: center;
   min-width: 280px;
-  padding-right: 1rem; /* small spacing from right edge */
+  padding-right: 1rem;
 }
 
 .hero-image-container {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   max-width: 450px;
 }
 
+/* removed the dark overlay */
 .hero-image-container::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(0,0,255,0.05), rgba(0,0,0,0.1));
-  z-index: 1;
+  content: none;
 }
 
 .hero-img {
@@ -73,11 +73,12 @@
   position: relative;
   z-index: 2;
 }
+
 /* Common button style */
 .button,
 .btn-register {
   background: blue;
-  color: white;
+  color: #fff;
   padding: 0.6rem 1.2rem;
   border-radius: 6px;
   font-weight: 600;

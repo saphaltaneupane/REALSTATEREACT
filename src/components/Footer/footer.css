@@ -58,3 +58,24 @@
   font-size: 0.9rem;
   color: #aaa;
 }
+.footer-link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #4299e1; /* Or whatever your theme color is */
+  text-decoration: none;
+}
+
+/* Remove default list styling if needed */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}

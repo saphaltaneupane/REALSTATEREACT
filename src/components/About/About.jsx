@@ -3,16 +3,16 @@ import "./About.css";
 
 export default function About() {
   return (
-    <div className="about-page">
-      {/* Hero Section */}
+    <div className="about-page" id="about">
+   
       <section className="about-hero">
         <div className="hero-overlay">
-          <h1>About <span>Us</span></h1>
-          <p>Your trusted partner in finding your dream property.</p>
+          <h1>About Us</h1>
+         
         </div>
       </section>
 
-      {/* Intro Section */}
+    
       <section className="about-intro">
         <div className="about-intro-text">
           <h2>Who We Are</h2>

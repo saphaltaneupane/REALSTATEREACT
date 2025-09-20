@@ -35,7 +35,7 @@ const App = () => {
           }
         />
 
-        {/* Register page */}
+
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/Home" element={<Home />} />

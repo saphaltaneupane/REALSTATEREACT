@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";  
 import "./Header.css";
 
+
 const Header = () => {
   return (
     <header className="header-wrapper">
@@ -16,6 +17,7 @@ const Header = () => {
           <Link to="contact" smooth={true} duration={500} className="nav-link">
             Contact us
           </Link>
+          <Link to="about" smooth={true} duration={500} className="nav-link">About us</Link>
           <RouterLink to="/login" className="nav-link">
             Login
           </RouterLink>

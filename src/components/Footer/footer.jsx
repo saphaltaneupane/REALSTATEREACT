@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./Footer.css";
 
 const Footer = () => {
@@ -18,10 +19,27 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#property">Property</a></li>
+            <li>
+              <Link 
+                to="property" 
+                smooth={true} 
+                duration={500} 
+                className="footer-link"
+              >
+                Property
+              </Link>
+            </li>
             
-      
-            <li><a href="#contact">Contact Us</a></li>
+            <li>
+              <Link 
+                to="contact" 
+                smooth={true} 
+                duration={500} 
+                className="footer-link"
+              >
+                Contact Us
+              </Link>
+            </li>
           </ul>
         </div>
 
