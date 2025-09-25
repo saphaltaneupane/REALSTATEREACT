@@ -1,6 +1,11 @@
+import HomeHeader from '../HomeHeader/HomeHeader';
+
 function Home() {
-  return <div>
-    <h1>hwllo </h1>
-  </div>;
-}   
+  return (
+    <div>
+      <HomeHeader />
+    </div>
+  );
+}
+
 export default Home;
