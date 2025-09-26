@@ -9,6 +9,7 @@ header{
     padding-top: 24px; 
     width: 100%;
     min-height: 320px;
+    position: relative; /* for absolute positioning of logout */
 }
 .home-header img {
     width: 110px; 
@@ -72,4 +73,42 @@ header{
     margin: 0;
     padding: 0;
     display: block;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    top: 18px;
+    right: 32px;
+    width: auto;
+    justify-content: flex-end;
+}
+
+.welcome-text {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 0;
+}
+
+.logout-btn {
+    position: static;
+    background: #e53935;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 12px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(229,57,53,0.12);
+    transition: background 0.2s;
+    z-index: 2;
+    margin-left: 8px;
+}
+
+.logout-btn:hover {
+    background: #b71c1c;
 }

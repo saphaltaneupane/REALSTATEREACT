@@ -11,12 +11,14 @@ import Login from './components/Login/Login';
 import Register from './components/Register/Register'; 
 import Home from './components/Home/Home'; // <-- Add this line
 import About from './components/About/About'; // <-- Add this line
-
+import Local from './components/Local/local';
+import Sell from './components/Sell/Sell';
+import Rentals from './components/Rentals/rentals';
 const App = () => {
   return (
     <div className="App">
       <Routes>
-        {/* Home page */}
+        
         <Route
           path="/"
           element={
@@ -26,7 +28,7 @@ const App = () => {
                 <Header />
                 <Hero />
               </div>
-              <Properties />
+               <House />
                 <About />
               <Contact />
               <Footer />
@@ -39,6 +41,14 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/Home" element={<Home />} />
+        
+      
+       
+        <Route path="/local" element={<Local />} />
+        <Route path="/sell" element={<Sell />} />
+        <Route path="/rentals" element={<Rentals />} />
+      
+ 
       </Routes>
     </div>
   )
